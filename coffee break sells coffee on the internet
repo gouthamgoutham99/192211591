@@ -1,0 +1,28 @@
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.SessionScoped;
+
+@ManagedBean
+@SessionScoped
+public class OrderBean {
+    private int quantityCoffee1;
+    private int quantityCoffee2;
+    // Other properties and methods as needed
+
+    public int getQuantityCoffee1() {
+        return quantityCoffee1;
+    }
+
+    public void setQuantityCoffee1(int quantityCoffee1) {
+        this.quantityCoffee1 = quantityCoffee1;
+    }
+
+    public int getQuantityCoffee2() {
+        return quantityCoffee2;
+    }
+
+    public void setQuantityCoffee2(int quantityCoffee2) {
+        this.quantityCoffee2 = quantityCoffee2;
+    }
+
+    // Other getters and setters
+}

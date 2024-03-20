@@ -1,0 +1,18 @@
+import javax.jws.WebMethod;
+import javax.jws.WebService;
+import javax.xml.ws.Endpoint;
+
+@WebService
+public class HelloWorld {
+
+    @WebMethod
+    public String sayHello(String name) {
+        return "Hello, " + name + "!";
+    }
+
+    public static void main(String[] args) {
+        // Publish the web service at http://localhost:8080/helloWorld
+        Endpoint.publish("http://localhost:8080/helloWorld", new HelloWorld());
+        System.out.println("Web service started at http://localhost:8080/helloWorld");
+    }
+}
